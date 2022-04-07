@@ -16,14 +16,16 @@ export function RestaurantDetails() {
     <div>
       {data.map((e) => {
         return (
-          <div>
-            <img src={e.img} alt="" />
+          <div className="overall">
             <div>
+              <img src={e.img} alt="" />
+            </div>
+            <div className="hotel">
               <p>Name : {e.name}</p>
               <p>Category : {e.category}</p>
-              <p>cost_for_two : {e.cost_for_two}</p>
+              <p>Cost for Two : {e.cost_for_two}</p>
             </div>
-            <div>
+            <div className="review">
               <p>Rating : {e.rating}</p>
               <p>Reviews : {e.reviews}</p>
               <p>Votes : {e.votes}</p>
